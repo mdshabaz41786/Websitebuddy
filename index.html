@@ -4,13 +4,99 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css/link.css">
+  <style>
+    nav {
+      background-color : blue;
+      height : 80px;
+      width : 100%;
+      }
+    label.logo {
+      color : white;
+      font-size : 24px;
+      font-weight : bold;
+      padding : 0 100px;
+      line-height : 80px;
+      }
+    nav ul {
+      float : right;
+      margin-right : 20px;
+      }
+    nav ul li { 
+      display : inline-block;
+      line-height : 80px;
+      margin : 0 5px;
+    nav ul li a {
+      font-size : 17px;
+      color : white;
+      padding : 7px 13px;
+      text-transform : uppercase;
+      border-radius : 3px;
+      }
+      .active, a:hover {
+        background : red;
+        transition : .5s;
+        }
+      .checkbtn {
+        font-size : 30px;
+        float : right;
+        margin-right : 40px;
+        color : white;
+        line-height : 80px;
+        display : none;
+        }
+      #check {
+        display : none;
+        }
+      @media (max-width : 952px) {
+        label.logo { 
+          font-size : 40px;
+          padding-left : 50px;
+          }
+        nav ul li a {
+          font-size : 16px;
+          }
+        @media (max-width: 858px) {
+          .checkbtn {
+            display : block;
+            }
+          ul {
+            position : fixed;
+            width : 100%;
+            height : 100vh;
+            text-align : center;
+            background : pink;
+            top : 80px;
+            left : -100%;
+            transition : all .5s;
+            }
+          nav ul li {
+            display : block;
+            }
+          nav ul li a {
+            font-size : 20px;
+            }
+          .active, a:hover {
+            background : none;
+            color : yellow;
+            }
+          #check:checked ~ ul {
+            left : 0;
+            }
+          }
 <body>
-<div class="navbar">
-<a href="#"> About us </a>
-<a href="#"> About us</a>
-<a href="#"> About us</a>
-<div class="webname">Website Name </div>
-</div>
+<nav>
+      <input type="checkbox" id="check">
+      <label for="check">
+      <i class="fas fa-bars> </i>
+      </label>
+  <label class="logo"> Brand Name </label>
+  <ul>
+    <li> <a class="active" href="#"> Home </a> </li>
+    <li> <a href="#"> Home </a> </li>
+    <li> <a href="#"> Home </a> </li>
+    <li> <a href="#"> Home </a> </li>
+    </ul>
+  </nav>
 <div class="header">
 <img src="image/webhost.webp" style="width:100%; height:400px;">
 </div>
