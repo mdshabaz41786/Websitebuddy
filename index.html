@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<head>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/397efffeb3.js" crossorigin="anonymous"></script>
+<style>
+* {
+padding : 0;
+margin : 0;
+text-decoration : none;
+list-style : none;
+box-sizing: border-box;
+}
+body {
+font-family :arial;
+}
+nav {
+background-color : blue;
+height : 80px;
+width : 100%;
+}
+label.logo {
+font-size :24px;
+color : white;
+line-height : 80px;
+padding : 0 100px;
+font-weight : bold;
+}
+nav ul {
+float : right;
+margin-right : 20px;
+}
+nav ul li {
+display : inline-block;
+line-height : 80px;
+margin : 0 5px;
+}
+nav ul li a {
+color : white;
+font-size : 17px;
+padding : 7px 13px;
+text-transform : uppercase;
+}
+.active, a:hover {
+background: red;
+transition : .5s;
+}
+.checkbtn {
+font-size: 30px;
+color : white;
+float :right;
+margin-right : 40px;
+line-height : 80px;
+display : none;
+}
+#check {
+display : none;
+}
+.body {
+border : solid 1px #f1f1f1;
+}
+.tab1 {
+border : solid 1px #f1f1f1;
+margin : 20px;
+}
+.tab2 {
+border : solid 1px #f1f1f1;
+margin : 20px;
+}
+h1 {
+text-align : center;
+font-weight : bold;
+margin : 20px;
+color : blue;
+}
+p {
+padding : 7px;
+}
+.footer {
+background : #f1f1f1;
+height : 50vh;
+width : 100%;
+padding : 20px;
+margin : 20px;
+}
+.sec {
+float : left;
+width : 30%;
+color : black;
+}
+.sec1 {
+float : left;
+width : 30%;
+color : black;
+}
+.sec2 {
+float : left;
+width :30%;
+color : black;
+
+}
+@media (max-width : 950px)
+label.logo {
+font-size : 30px;
+padding-left : 50px;
+}
+nav ul li a {
+font-size : 16px;
+}
+@media (max-width:858px) {
+.checkbtn {
+display : block;
+}
+ul {
+position : fixed;
+text-align : center;
+background : pink;
+width : 100%;
+height : 100vh;
+top : 80px;
+left : -100%;
+transition :all .5s;
+}
+nav ul li {
+display : block;
+}
+nav ul li a {
+font-size : 16px;
+}
+.active, a:hover {
+background : none;
+color : yellow;
+}
+#check:checked ~ ul {
+left : 0;
+}
+sec,sec1,sec2 { 
+position : fixed;
+}
+.sec, .sec1, .sec2 {
+font-size : 12px;
+}
+</style>
+</head>
+<body>
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"> </i>
+</label>
+<label class="logo">Name</label>
+<ul>
+<li> <a class="active" href="index.html"> Home </a></li>
+<li> <a href="about.html"> About us </a></li>
+<li> <a href="#"> About </a></li>
+<li> <a href="#"> About </a></li>
+</ul>
+</nav>
+<div class="body">
+<div class="tab">
+<img src="smcmainbanner.png"  style="width:100%;">
+</div>
+<div class="tab1">
+<h1> Why join us ? </h1>
+<p> At SMC, we believe in growing with our Partners and Business Associates and creating valuable relationships. It's about co-ownership of the business. It's about having the passion to go that extra mile. And it's about being feeling a part of a family. 
+SMC believes in growing with its Business Partners/Associates.</p>
+<img src="smc-autotrender-banner.jpg" style="width:100%">
+</div>
+<div class="tab2">
+<h1> Why join us ? </h1>
+<p> At SMC, we believe in growing with our Partners and Business Associates and creating valuable relationships. It's about co-ownership of the business. It's about having the passion to go that extra mile. And it's about being feeling a part of a family. 
+SMC believes in growing with its Business Partners/Associates.</p>
+<img src ="smc-main-banner-top10.png"  style="width:100%;">
+</div>
+</div>
+<br clear="all">
+
+<div class="footer">
+<h1> @MD SHABAZ </h1>
+<div class="sec">
+<p> Contant : =91 8334823422 </p>
+<p> Email : itsmdshabaz@gmail.com </p>
+<p> Address : Poddar Court, Kolkata </p>
+</div>
+<div class="sec1">
+<p> Terms and use </p>
+<p> Terms and use </p>
+<p> Terms and use </p>
+</div>
+<div class="sec2">
+<h3> Social Media </h3>
+<p> Terms and use </p>
+<p> Terms and use </p>
+<p> Terms and use </p>
+</div>
+
+</body>
