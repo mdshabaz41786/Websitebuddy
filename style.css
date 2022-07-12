@@ -189,7 +189,8 @@ width : 100%;
 height : auto;
 }
 .card {
-margin-left : 30px;
+width : 50%;
+margin-left : 30%;
 }
 .prolist {
 width : 50%;
